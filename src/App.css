@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background: linear-gradient(180deg, rgba(242, 201, 76, 0.2) 0%, rgba(242, 153, 74, 0.2) 100%);
+}
+
+.container {
+  width: 70%;
+  margin: 3rem auto;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+}
+
+h2 {
+  text-align: left;
+  font-size: 5rem;
+  color: rgb(131, 131, 176);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+em {
+  color: red;
+  font-size: 3rem;
+  padding: 0 0.5rem;
+  font-weight: 900;
+}
+
+/* The bg color here should be white,I will 
+add that to the parent container */
+
+.trackers {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+ul {
+  width: 100%;
+  margin: 2.5rem 0;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px black solid;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  font-size: 5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  color: rgba(189, 189, 189, 1);
+}
+
+.personal {
+  background-color: transparent;
+  width: 100%;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.active-underline {
+  /* background-color: green; */
+  position: relative;
+  padding: 0 1rem;
+  color: rgba(242, 153, 74, 1);
+}
+
+.info {
+  font-size: 2rem
+}
+
+.active-underline:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 13px;
+  border-radius: 10px;
+  right: 0;
+  bottom: -10px;
+  /* color:rgba(242, 153, 74, 1); */
+  background: rgba(242, 153, 74, 1);
+}
+
+label {
+  font-size: 2rem;
+  margin: -0.5rem;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+input {
+  width: 100%;
+  height: 5rem;
+  border-radius: 13px;
+  border: 2px rgb(63, 63, 135) solid;
+  margin: 1.5rem -0.5rem;
+  padding: 1rem 2rem;
+  font-size: 3rem;
+}
+
+input:active {
+  border: 2px red solid;
+}
+
+::placeholder {
+  font-size: 2rem;
+}
+
+.location {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.location>span {
+  flex-basis: 50%;
+}
+
+.special-effect {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-left: -1.5rem;
+}
+
+.special-effect button {
+  width: 60%;
+  border: none;
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+
+.special-effect button:nth-child(2) {
+  background: transparent;
+}
+
+.location .cvv input {
+  width: 30%;
+  font-size: 2rem;
+}
+
+.next {
+  background: linear-gradient(180deg, #F2C94C 0%, #F2994A 100%);
+}
+
+.confirmBox {
+  width: 100%;
+  background-color: #fff;
+  /* padding: 0 2rem; */
+}
+
+.price {
+  padding-right: 4rem;
+}
+
+.items {
+  border-bottom: 2px black solid;
+  margin: 3rem;
+}
+
+.confirm {
+  border-radius: 13px;
+  box-shadow: 0px 10px 15px 0px rgba(33, 30, 67, 0.08);
+}
+
+.box {
+  padding: 1rem 5rem;
+  font-size: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box1 {
+  background: rgba(47, 128, 237, 1);
+  border-radius: 13px 13px 0 0;
+}
+
+.box3 {
+  border-radius: 13px;
+  border: 1px black solid;
+  margin: 0 2rem;
+}
+
+.pay {
+  margin: 0 1rem;
+}
+
+.complete {
+  /* width: 50%; */
+  padding: 4rem;
+  background-color: #fff;
+}
+
+.complete h1 {
+  color: rgba(78, 89, 140, 1);
+  font-size: 6rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.complete p {
+  text-align: center;
+  font-size: 3rem;
+  padding: 0 2rem;
+}
+
+.complete a {
+  margin-left: 8rem;
+  font-size: 3rem;
+  color: #F2994A;
+}
